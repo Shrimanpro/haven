@@ -81,12 +81,15 @@ GOOGLE_API_KEY=your_api_key_here
 ```
 
 ### Run the App
+Running the App
+---------------
 
+### Start Backend
 ```
 cd backend
 python app.py
 ```
-
+### Start Frontend
 ```
 cd frontend
 npm run dev
