@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulse-grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes pulse-shrink {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@font-face {
+  font-family: 'Atop';
+  src: url('../public/fonts/Atop-R99O3.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+
+
+.animate-pulse-grow {
+  animation: pulse-grow 2s ease-in-out forwards;
+}
+
+.animate-pulse-shrink {
+  animation: pulse-shrink 2s ease-in-out forwards;
+}
+
+.custom-prose strong {
+  @apply text-3xl font-extrabold;
+}
+
+.custom-prose {
+  @apply text-lg;
+}
+
