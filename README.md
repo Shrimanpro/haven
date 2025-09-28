@@ -62,3 +62,32 @@ Getting Started
 cd mindful-app
 ```
 2. Install frontend dependencies
+```
+cd frontend
+npm install
+```
+3. Install backend dependencies
+```
+cd ../backend
+pip install -r requirements.txt
+```
+4. Add your API keys
+
+Create a .env file in the backend/ folder
+
+Add:
+```
+GOOGLE_API_KEY=your_api_key_here
+```
+
+### Run the App
+
+```
+cd backend
+python app.py
+```
+
+```
+cd frontend
+npm run dev
+```
